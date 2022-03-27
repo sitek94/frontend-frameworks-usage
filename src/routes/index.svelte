@@ -45,7 +45,7 @@
   </div>
   <div class="right">
     <div class="view">
-      <h2>Frontend Framework Usage</h2>
+      <h2>Frontend Frameworks Usage</h2>
       <HorizontalBarChart
         {data}
         width={innerWidth / 2}

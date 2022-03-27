@@ -1,4 +1,11 @@
-# create-svelte
+# Frontend Frameworks Usage
+
+A simple example of using `IntersectionObserver` to detect when an element is in the viewport, and then update the data
+displayed in the chart.
+
+Data from [State of JS](https://stateofjs.com/)
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
