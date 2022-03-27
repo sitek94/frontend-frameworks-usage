@@ -1,2 +1,30 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import HorizontalBarChart from '$lib/HorizontalBarChart.svelte'
+
+  const data = [
+    {
+      name: 'React',
+      value: 50
+    },
+    {
+      name: 'Vue',
+      value: 30
+    },
+    {
+      name: 'Angular',
+      value: 20
+    },
+    {
+      name: 'Ember',
+      value: 10
+    }
+  ]
+</script>
+
+<HorizontalBarChart
+  {data}
+  xKey="value"
+  yKey="name"
+  height={400}
+  margin={{ top: 20, right: 15, bottom: 100, left: 100 }}
+/>
