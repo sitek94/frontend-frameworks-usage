@@ -27,7 +27,7 @@
 
 <svg {width} {height}>
   <g transform="translate({margin.left},{margin.top})">
-    <!-- y axis -->
+    <!-- Y-axis -->
     <g>
       {#each yScale.domain() as tickValue}
         <text
@@ -53,7 +53,7 @@
       {/each}
     </g>
 
-    <!-- Bars   -->
+    <!-- Bars  -->
     <g class="bars">
       {#each data as d, i}
         <rect x={0} y={yScale(yValue(d))} width={xScale(xValue(d))} height={yScale.bandwidth()} />
@@ -63,10 +63,6 @@
 </svg>
 
 <style>
-  svg {
-    position: relative;
-  }
-
   .tick {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 0.725em;
